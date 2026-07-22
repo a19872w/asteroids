@@ -25,7 +25,7 @@ jobs:
 
       - name: Build with Nuitka
         run: |
-          python -m nuitka --standalone --onefile --include-package=pygame main.py
+          python -m nuitka --standalone --onefile --include-package=pygame --assume-yes-for-downloads main.py
 
       - name: Upload executable artifact
         uses: actions/upload-artifact@v4
